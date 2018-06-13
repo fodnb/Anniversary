@@ -7,10 +7,9 @@
     "compile:sass": "node-sass sass/main.scss public/css/style.css -w",
     "start": "node server"
   },
-  
     "engines": {
         "node": "8.5.0"
-},
+  },
     "repository": {
     "type": "git",
     "url": "git+https://github.com/fodnb/Anniversary.git"
