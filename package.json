@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss public/css/style.css -w",
-    "start": "node server.js"
-  },
-    "engines": {
-        "node": "8.5.0"
+    "start": "node server"
   },
     "repository": {
     "type": "git",
