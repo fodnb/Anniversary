@@ -1,0 +1,39 @@
+.header-main {
+    background-image: linear-gradient(to bottom right, 
+    rgba($color-primary-light, .8),
+    rgba($color-primary-dark, .8)), 
+    url("/img/bridgetobeach.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: .4rem;
+    margin-bottom: 4rem;
+    
+    
+    height: 95vh;
+    position: relative;
+    color: $color-primary;
+
+
+    &__logo {
+        height: 3rem;
+    }
+
+    &__text {
+        font-size: 8rem;    
+        @include absCenter;
+        text-align: center;
+        
+    }
+
+    &__popLove {
+      font-family: 'Cinzel', serif;
+      display: block;
+      font-size: 3rem;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-20%)
+    }
+
+}

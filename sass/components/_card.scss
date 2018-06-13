@@ -1,0 +1,120 @@
+.card {
+
+    position: relative;
+    perspective: 125rem;
+    height: 60rem;
+    text-transform: uppercase;
+
+    &__side {
+        height: 60rem;
+        position: absolute; 
+        transition: all 1s ease;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        border-radius: .3rem;
+        text-align: center;
+
+        &--front {
+            background-color: $color-secondary;
+            background-size: cover;
+
+            &-1 {
+                background-image: url("/img/australiacover.jpeg");
+            }   
+
+            &-2 {
+                background-image: url("/img/croatiacover2.jpeg");
+            }
+
+            &-3 {
+                background-image: url("/img/aucklandcover.jpg");
+            }
+
+
+            &-4 {
+                background-image: url("/img/icelandcover2.jpg");
+                
+            }
+    
+        }
+        &--back {
+            background-color: blue;
+            transform: rotateY(180deg);
+        }
+    
+    }
+
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    &__heading-span {
+        font-size: 2.5rem;
+        color: #fdcb6e;
+        text-shadow: $secondary-text-shadow;
+    }
+
+    &__picture{
+ 
+        background-size: cover;
+        margin: 0 1rem;
+        border-radius: 1rem;
+    
+        &-front {
+            // border-radius: 60%;
+            height: 15rem;
+        }
+
+        &-back {
+            height: 40%;
+        }
+
+        &-1f {
+            background-image: url("/img/australiaFlag.png");
+
+        }
+
+        &-1b {
+            background-image: url("/img/australia.jpg");
+
+        }
+
+        &-2f {
+
+            background-image: url("/img/croatiaFlag.png");
+        
+        }
+
+        &-2b {
+            background-image: url("/img/croatia.jpg");
+
+        }
+        &-3f {
+            background-image: url("/img/newZealandFlag.png");
+
+        }
+        &-3b {
+            background-image: url("/img/newZealand.jpg");
+        }
+        &-4f {
+            background-image: url("/img/icelandFlag.png");
+
+        }
+        &-4b {
+            background-image: url("/img/iceland.jpg");
+
+        }
+    }
+
+
+
+}

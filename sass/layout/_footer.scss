@@ -1,0 +1,16 @@
+.footer {
+    margin-top: 5rem;
+    background-image: linear-gradient(to bottom right, 
+    rgba($color-secondary, .8), 
+    rgba($color-primary-dark, .8));
+    border-radius: .5rem;
+
+
+    h4 {
+        font-size: 4rem;
+        text-align: center;
+        text-shadow: 1px 1px 0px $color-black;
+
+}
+}
+

@@ -1,0 +1,37 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    cursor: -webkit-grab;
+
+    @include respond(tab-land){
+        font-size: 56.25%;
+    }
+    @include respond(tap-port){
+        font-size: 50%;
+    }
+    @include respond(phone){
+        font-size: 37.5%;
+    }
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
+
+}   
+
+body {
+    box-sizing: border-box;
+    background-color: $color-grey;
+    padding: 3rem;
+
+    @include respond(tab-port){
+        padding: 0;
+    }
+
+}

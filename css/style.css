@@ -1,0 +1,358 @@
+@keyframes fromLeft {
+  0% {
+    opacity: 0;
+    font-size: 10rem; }
+  10% {
+    transform: translateX(-10rem);
+    font-size: 8rem; }
+  20% {
+    transform: translateX(10rem);
+    font-size: 6rem; }
+  40% {
+    transform: translateX(-5rem);
+    font-size: 4rem; }
+  60% {
+    transform: translate(5rem);
+    font-size: 2rem; }
+  70% {
+    transform: translateX(0);
+    opacity: 1;
+    font-size: 6rem; }
+  80% {
+    font-size: 10rem; }
+  85% {
+    opacity: 1;
+    font-size: 12rem; }
+  90% {
+    opacity: 1;
+    font-size: 6rem; }
+  95% {
+    opacity: 1;
+    font-size: 14rem; }
+  100% {
+    opacity: 1;
+    font-size: 6rem; } }
+
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    font-size: 2rem; }
+  10% {
+    transform: translateX(10rem);
+    font-size: 4rem; }
+  20% {
+    transform: translateX(-10rem);
+    font-size: 6rem; }
+  40% {
+    transform: translateX(5rem);
+    font-size: 8rem; }
+  60% {
+    transform: translate(-5rem);
+    font-size: 10rem; }
+  80% {
+    transform: translateX(0);
+    opacity: 1;
+    font-size: 8rem; }
+  85% {
+    opacity: 0;
+    font-size: 6rem; }
+  90% {
+    opacity: .5;
+    font-size: 4rem; }
+  95% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    font-size: 2rem; } }
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4); }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0); }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0); } }
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  cursor: -webkit-grab; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 37.5%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  background-color: #eee;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+body {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #ff7675; }
+
+.heading-primary {
+  color: #d63031;
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: uppercase;
+  backface-visibility: hidden; }
+  .heading-primary--top {
+    display: block;
+    animation-name: fromLeft;
+    animation-duration: 8s;
+    animation-timing-function: ease-out; }
+  .heading-primary--bottom {
+    display: block;
+    animation-name: fromRight;
+    animation-duration: 8s;
+    animation-timing-function: ease-out; }
+  .heading-primary--center {
+    display: block;
+    font-size: 6rem;
+    color: #0984e3; }
+
+.heading-secondary {
+  font-size: 4rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  color: #81ecec;
+  text-transform: uppercase; }
+  .heading-secondary--left {
+    display: inline;
+    animation-name: fromTop;
+    animation-delay: 6s;
+    animation-duration: 5s; }
+  .heading-secondary--center {
+    display: inline;
+    animation-name: fromTop;
+    animation-delay: 6s; }
+  .heading-secondary--right {
+    display: inline;
+    animation-name: fromTop;
+    animation-delay: 6s;
+    animation-duration: 3s; }
+
+.blue-color {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.7;
+  display: inline-block;
+  letter-spacing: .2rem;
+  transition: all .2s;
+  background-image: linear-gradient(to right, #6c5ce7, #0984e3);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+  padding: 2rem; }
+  .blue-color:hover {
+    transform: skewY(4deg) skewX(15deg) scaleY(1.5);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.heading-tertiary {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  color: #55efc4; }
+
+.u-center-text {
+  text-align: center; }
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
+
+.u-margin-top-big {
+  margin-top: 8rem; }
+
+.u-margin-top-huge {
+  margin-top: 10rem; }
+
+.card {
+  position: relative;
+  perspective: 125rem;
+  height: 60rem;
+  text-transform: uppercase; }
+  .card__side {
+    height: 60rem;
+    position: absolute;
+    transition: all 1s ease;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    border-radius: .3rem;
+    text-align: center; }
+    .card__side--front {
+      background-color: #74b9ff;
+      background-size: cover; }
+      .card__side--front-1 {
+        background-image: url("/img/australiacover.jpeg"); }
+      .card__side--front-2 {
+        background-image: url("/img/croatiacover2.jpeg"); }
+      .card__side--front-3 {
+        background-image: url("/img/aucklandcover.jpg"); }
+      .card__side--front-4 {
+        background-image: url("/img/icelandcover2.jpg"); }
+    .card__side--back {
+      background-color: blue;
+      transform: rotateY(180deg); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__heading-span {
+    font-size: 2.5rem;
+    color: #fdcb6e;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3); }
+  .card__picture {
+    background-size: cover;
+    margin: 0 1rem;
+    border-radius: 1rem; }
+    .card__picture-front {
+      height: 15rem; }
+    .card__picture-back {
+      height: 40%; }
+    .card__picture-1f {
+      background-image: url("/img/australiaFlag.png"); }
+    .card__picture-1b {
+      background-image: url("/img/australia.jpg"); }
+    .card__picture-2f {
+      background-image: url("/img/croatiaFlag.png"); }
+    .card__picture-2b {
+      background-image: url("/img/croatia.jpg"); }
+    .card__picture-3f {
+      background-image: url("/img/newZealandFlag.png"); }
+    .card__picture-3b {
+      background-image: url("/img/newZealand.jpg"); }
+    .card__picture-4f {
+      background-image: url("/img/icelandFlag.png"); }
+    .card__picture-4b {
+      background-image: url("/img/iceland.jpg"); }
+
+.composition {
+  position: relative;
+  margin-bottom: 5rem; }
+  .composition__photo {
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .composition__photo--1 {
+      left: -.5rem;
+      top: -1rem; }
+    .composition__photo--2 {
+      right: 2rem;
+      top: 2rem; }
+    .composition__photo--3 {
+      top: 13rem;
+      left: 10rem; }
+    .composition__photo:hover {
+      z-index: 20;
+      outline: 1.5rem solid #fd79a8;
+      transform: scale(1.1) translateY(-0.5rem);
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8); }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95);
+    filter: blur(1px); }
+
+.footer {
+  margin-top: 5rem;
+  background-image: linear-gradient(to bottom right, rgba(116, 185, 255, 0.8), rgba(250, 177, 160, 0.8));
+  border-radius: .5rem; }
+  .footer h4 {
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 1px 1px 0px #000; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 6rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col"] {
+    float: left; }
+    .row [class^="col"]:not(:last-child) {
+      margin-right: 2rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 2rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2rem * 2 ) / 3); }
+  .row .col-1-of-4 {
+    width: calc((100% - 2rem * 3 ) / 4); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2rem * 2 ) / 3) + 2rem); }
+  .row .col-2-of-4 {
+    width: calc( 2 * ((100% - 2rem * 3 ) / 4) + 2rem); }
+  .row .col-1-of-8 {
+    width: calc((100% - 7 * 2rem) / 8); }
+
+.header-main {
+  background-image: linear-gradient(to bottom right, rgba(253, 121, 168, 0.8), rgba(250, 177, 160, 0.8)), url("/img/bridgetobeach.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  border-radius: .4rem;
+  margin-bottom: 4rem;
+  height: 95vh;
+  position: relative;
+  color: #ff7675; }
+  .header-main__logo {
+    height: 3rem; }
+  .header-main__text {
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header-main__popLove {
+    font-family: 'Cinzel', serif;
+    display: block;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-20%); }
+
+.section-about {
+  background-image: linear-gradient(110deg, rgba(108, 92, 231, 0.8) 20%, rgba(9, 132, 227, 0.8) 40%, transparent 50%, rgba(108, 92, 231, 0.8) 80%, rgba(9, 132, 227, 0.8) 100%);
+  padding: 1rem 0;
+  border-radius: .4rem;
+  height: 100vh; }
+  .section-about p {
+    color: blue; }
+    .section-about p:hover {
+      -webkit-transform: scale(1.1); }
+
+.section-card {
+  margin: 10rem 0; }
