@@ -44,6 +44,8 @@
         &--back {
             background-color: blue;
             transform: rotateY(180deg);
+
+
         }
     
     }
@@ -51,6 +53,7 @@
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
+
         @include respond(tab-land){
             transform: rotateY(0);
         }
@@ -58,6 +61,10 @@
 
     &:hover &__side--back {
         transform: rotateY(180deg);
+        @include respond(tab-land){
+            transform: rotateY(0);
+        }
+
     }
 
     &__heading-span {
