@@ -127,7 +127,7 @@ body {
     @media (max-width: 56.25em) {
       .heading-primary--top {
         letter-spacing: 1.2rem;
-        font-size: 12rem; } }
+        font-size: 10rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--top {
         letter-spacing: 1rem;
@@ -144,11 +144,11 @@ body {
     @media (max-width: 56.25em) {
       .heading-primary--bottom {
         letter-spacing: 1.2rem;
-        font-size: 12rem; } }
+        font-size: 9rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--bottom {
         letter-spacing: 1rem;
-        font-size: 10rem; } }
+        font-size: 5rem; } }
   .heading-primary--center {
     display: block;
     font-size: 6rem;
@@ -452,6 +452,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 56.25em) {
+      .header-main__text {
+        font-size: 6rem; } }
   .header-main__popLove {
     font-family: 'Cinzel', serif;
     display: block;
