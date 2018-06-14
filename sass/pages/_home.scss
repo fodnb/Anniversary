@@ -26,6 +26,11 @@
             }
         }
 
+        @include respond(tab-land){
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+
         @include respond(tab-port){
             font-size: 3rem;
         }

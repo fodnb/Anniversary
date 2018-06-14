@@ -15,7 +15,7 @@
 
         @include respond(tab-land){
             width: 33.33%;
-            height: 15rem;
+            height: 20rem;
             
         }
 
@@ -33,7 +33,7 @@
             left: -.5rem;
             top: -1rem;
             @include respond(tab-land){
-                left: 11.5rem;
+                left: 0rem;
                 top: -6rem;
             }
 
@@ -46,7 +46,7 @@
             right: 2rem;
             top: 2rem;
             @include respond(tab-land){
-                right: 7rem;
+                right: 0rem;
                 top: -6rem;
             }
             @include respond(tab-port){
@@ -60,8 +60,8 @@
             top: 13rem;
             left: 10rem;  
             @include respond(tab-land){
-                top: 5rem;
-                left: 23rem;    
+                top: -6rem;
+                left: 40.5rem;    
             }
             @include respond(tab-port){
                 top: 0;
