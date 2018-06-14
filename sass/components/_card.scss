@@ -99,6 +99,10 @@
 
         &-back {
             height: 40%;
+
+            @include respond(tab-port){
+                height: 0;
+            }
         }
 
         &-1f {

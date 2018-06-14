@@ -296,6 +296,9 @@ body {
           width: 32%; } }
     .card__picture-back {
       height: 40%; }
+      @media (max-width: 56.25em) {
+        .card__picture-back {
+          height: 0; } }
     .card__picture-1f {
       background-image: url("/img/australiaFlag.png"); }
     .card__picture-1b {
