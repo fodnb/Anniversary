@@ -305,6 +305,9 @@ body {
     font-size: 4rem;
     text-align: center;
     text-shadow: 1px 1px 0px #000; }
+    @media (max-width: 37.5em) {
+      .footer h4 {
+        font-size: 8rem; } }
 
 .row {
   max-width: 114rem;
