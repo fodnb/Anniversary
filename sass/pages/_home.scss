@@ -11,13 +11,23 @@
     padding: 1rem 0;
     border-radius: .4rem;   
     height: 100vh;
+    
 
+    @include respond(tab-port){
+        height: auto;
+    }
 
         p {              
         color: blue;
         &:hover {
             -webkit-transform: scale(1.1);
-            
+            @include respond(tab-port){
+            -webkit-transform: scale(1);
+            }
+        }
+
+        @include respond(tab-port){
+            font-size: 3rem;
         }
     }
 

@@ -111,6 +111,10 @@ body {
         text-shadow: .5rem 1rem 2rem rgba($color-black, 0.2);
         // text-decoration: underline;
     }   
+
+    @include respond(phone){
+        font-size: 5rem;
+    }
 }
 
 .heading-tertiary {
@@ -118,5 +122,17 @@ body {
     font-size: 2rem;
     text-shadow: $secondary-text-shadow;
     color: #55efc4;
+
+    @include respond(tab-port){
+        font-size: 6rem;
+    }
+
+    @include respond(tab-port){
+        font-size: 4rem !important;
+    }
+
+    @include respond(phone){
+        text-align: center;
+    }
 
 }
