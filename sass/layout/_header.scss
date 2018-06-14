@@ -23,6 +23,10 @@
         font-size: 8rem;    
         @include absCenter;
         text-align: center;
+
+        @include respond(tab-port){
+            font-size: 6rem;
+        }
         
     }
 
