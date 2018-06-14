@@ -4,6 +4,7 @@
     perspective: 125rem;
     height: 60rem;
     text-transform: uppercase;
+    
 
     &__side {
         height: 60rem;
@@ -47,8 +48,8 @@
             transform: rotateY(180deg);
 
             @include respond(tab-land){
-                -webkit-transform: rotateY(0);
-                transform: rotateY(0);
+                -webkit-transform: rotateY(-180);
+                transform: rotateY(-180);
             }
 
         }
