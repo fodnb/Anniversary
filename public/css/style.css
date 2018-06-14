@@ -252,6 +252,11 @@ body {
     .card__side--front {
       background-color: #74b9ff;
       background-size: cover; }
+      @media (max-width: 56.25em) {
+        .card__side--front {
+          position: absolute;
+          top: 0;
+          left: 0; } }
       .card__side--front-1 {
         background-image: url("/img/australiacover.jpeg"); }
       .card__side--front-2 {
@@ -267,7 +272,10 @@ body {
       @media (max-width: 75em) {
         .card__side--back {
           -webkit-transform: rotateY(-180);
-          transform: rotateY(-180); } }
+          transform: rotateY(-180);
+          position: absolute;
+          top: 0;
+          left: 0; } }
   .card:hover .card__side--front {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg); }

@@ -22,7 +22,11 @@
         &--front {
             background-color: $color-secondary;
             background-size: cover;
-
+            @include respond(tab-port){
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
             &-1 {
                 background-image: url("/img/australiacover.jpeg");
             }   
@@ -50,6 +54,10 @@
             @include respond(tab-land){
                 -webkit-transform: rotateY(-180);
                 transform: rotateY(-180);
+                position: absolute;
+                top: 0;
+                left: 0;
+                
             }
 
         }
